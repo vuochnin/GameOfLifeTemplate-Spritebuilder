@@ -13,7 +13,7 @@
 static const int GRID_ROWS = 8;
 static const int GRID_COLUMNS = 10;
 
-@implementation Grid {
+@implementation Grid
 
     NSMutableArray *_gridArray;
     float _cellWidth;
@@ -29,11 +29,11 @@ static const int GRID_COLUMNS = 10;
         // accept touches on the grid
         self.userInteractionEnabled = YES;
     }
-    
+
     -(void) setupGrid{
         //divide the grid's size by the number of columns/rows to figure out the
         //width and height of each cell
-        _cellWidth = self.contenSize.width / GRID_COLUMNS;
+        _cellWidth = self.contentSize.width / GRID_COLUMNS;
         _cellHeight = self.contentSize.height / GRID_ROWS;
         
         float x = 0;
@@ -76,5 +76,5 @@ static const int GRID_COLUMNS = 10;
     
     
     
-}
+
 @end
