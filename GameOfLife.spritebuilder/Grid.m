@@ -58,7 +58,7 @@ static const int GRID_COLUMNS = 10;
             // this is shorthand to access an array inside an array
             _gridArray[i][j] = creature;
             
-
+            creature.isAlive = NO;
             
             x+=_cellWidth;
         }
