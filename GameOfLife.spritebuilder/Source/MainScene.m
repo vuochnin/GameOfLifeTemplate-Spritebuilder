@@ -41,7 +41,7 @@
     [_grid evolveStep];
     _generationLabel.string = [NSString stringWithFormat:@"%d", _grid.generation];
     _populationLabel.string = [NSString stringWithFormat:@"%d", _grid.totalAlive];
-    _grid = [[Grid alloc] init];
+    //_grid = [[Grid alloc] init];
 }
 
 
