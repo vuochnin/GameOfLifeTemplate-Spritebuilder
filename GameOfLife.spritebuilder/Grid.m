@@ -44,7 +44,7 @@ static const int GRID_COLUMNS = 10;
         _gridArray = [NSMutableArray array];
         
         // initialize Creatures
-        for (int i=0; i<GRID_ROWS; i++){
+        for (int i=0; i < GRID_ROWS; i++){
             // this is how you create two dimensional arrays in Objective-C.
             // You put arrays into arrays
             _gridArray[i] = [NSMutableArray array];
@@ -70,7 +70,7 @@ static const int GRID_COLUMNS = 10;
         
     }
 
-    -(void) touchBegan:(UITouch*)touch withEvent:(UIEvent *)event{
+    -(void) touchBegan:(UITouch *)touch withEvent:(UIEvent *)event{
         //get the x,y coordinates of the touch
         CGPoint touchLocation = [touch locationInNode:self];
     
