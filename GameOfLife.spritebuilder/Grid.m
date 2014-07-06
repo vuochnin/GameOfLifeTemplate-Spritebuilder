@@ -58,7 +58,7 @@ static const int GRID_COLUMNS = 10;
             // this is shorthand to access an array inside an array
             _gridArray[i][j] = creature;
             
-            creature.isAlive = NO;
+            
             
             x+=_cellWidth;
         }
@@ -66,6 +66,7 @@ static const int GRID_COLUMNS = 10;
         y += _cellHeight;
     }
 }
+
 -(void) touchBegan:(UITouch *)touch withEvent:(UIEvent *)event{
     //get the x,y coordinates of the touch
     CGPoint touchLocation = [touch locationInNode:self];
