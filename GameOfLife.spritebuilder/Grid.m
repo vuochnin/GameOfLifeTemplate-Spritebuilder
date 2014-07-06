@@ -13,12 +13,13 @@
 static const int GRID_ROWS = 8;
 static const int GRID_COLUMNS = 10;
 
-@implementation Grid
+@implementation Grid{
 
     NSMutableArray *_gridArray;
     float _cellWidth;
     float _cellHeight;
-    
+}
+
     //when the Grid class gets loaded a method called onEnter is called.
     //onEnter method is also the right method to activate touch handling on the grid
     -(void) onEnter{
